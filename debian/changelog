@@ -1,3 +1,10 @@
+linux-aw2607 (6.6.98-1) UNRELEASED; urgency=medium
+
+  [ Feng Zhang ]
+  * Add Linux 6.6 packaging support for Radxa Cubie A5E.
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 14 Sep 2026 17:46:00 +0800
+
 linux-aw2511 (6.6.98-4) unstable; urgency=medium
 
   [ ZHANG Yuntian ]

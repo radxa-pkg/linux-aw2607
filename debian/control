@@ -1,4 +1,4 @@
-Source: linux-aw2511
+Source: linux-aw2607
 Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
 Section: admin
 Priority: standard
@@ -18,32 +18,32 @@ Build-Depends: debhelper (>=12~),
                rsync,
                zstd,
 
-Package: linux-image-radxa-a733
+Package: linux-image-radxa-cubie-a5e
 Architecture: all
 Section: kernel
 Priority: optional
 Provides: linux-image
 Depends: radxa-overlays-dkms,
-         linux-image-${binary:Version}-aw2511,
+         linux-image-${binary:Version}-aw2607,
          ${misc:Depends},
-Description: Radxa Linux meta-package for Radxa A733 products
+Description: Radxa Linux meta-package for Radxa cubie-a5e products
  This is the meta-package for Linux kernel.
 
-Package: linux-headers-radxa-a733
+Package: linux-headers-radxa-cubie-a5e
 Architecture: all
 Section: kernel
 Priority: optional
 Provides: linux-headers
-Depends: linux-headers-${binary:Version}-aw2511,
+Depends: linux-headers-${binary:Version}-aw2607,
          ${misc:Depends},
-Description: Radxa Linux headers meta-package for Radxa A733 products
+Description: Radxa Linux headers meta-package for Radxa cubie-a5e products
  This is the meta-package for Linux headers.
 
-Package: linux-libc-dev-radxa-a733
+Package: linux-libc-dev-radxa-cubie-a5e
 Architecture: all
 Section: kernel
 Priority: optional
 Depends: linux-libc-dev (= ${binary:Version}),
          ${misc:Depends},
-Description: Radxa Linux libc-dev meta-package for Radxa A733 products
+Description: Radxa Linux libc-dev meta-package for Radxa cubie-a5e products
  This is the meta-package for Linux libc-dev.
