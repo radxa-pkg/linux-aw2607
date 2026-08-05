@@ -1,48 +1,6 @@
-linux-aw2511 (6.6.98-4) unstable; urgency=medium
-
-  [ ZHANG Yuntian ]
-  * fix: revert devcontainer image
-
-  [ github-actions[bot] ]
-  * chore: update submodules
-
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 04 Aug 2026 03:11:22 +0000
-
-linux-aw2511 (6.6.98-3) unstable; urgency=medium
-
-  [ Feng Zhang ]
-  * fix: add missing radxa-overlays-dkms dependency
-
-  [ ZHANG Yuntian ]
-  * chore: update submodules
-
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 11 Jun 2026 11:22:24 +0000
-
-linux-aw2511 (6.6.98-2) unstable; urgency=medium
-
-  [ ZHANG Yuntian ]
-  * fix: Update package version
-
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Sat, 09 May 2026 09:16:51 +0000
-
-linux-aw2511 (0.1.0-1) unstable; urgency=medium
+linux-aw2607 (6.6.98-1) unstable; urgency=medium
 
   [ "Radxa Computer Co., Ltd" ]
-  * Add initial Debian packaging support
+  * Add initial Debian packaging support for A527 (cubie-a5e)
 
-  [ ZHANG Yuntian ]
-  * fix: limit package release to related SoC repo
-  * Update devcontainer image from bookworm to trixie
-
-  [ Jiali Chen ]
-  * chore: add some submodules
-  * chore: devcontainer: bump base image to trixie
-  * feat: add build support
-  * feat: add package support
-  * feat: add radxa-a733 packages
-  * fix: disabled CONFIG_CPUFREQ_DT_PLATDEV
-
-  [ github-actions[bot] ]
-  * chore: update submodules
-
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 19 Mar 2026 11:44:41 +0000
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 03 Aug 2026 00:00:00 +0000

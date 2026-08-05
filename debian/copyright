@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: linux-aw2511
-Source: https://github.com/radxa-pkg/linux-aw2511
+Upstream-Name: linux-aw2607
+Source: https://github.com/radxa-pkg/linux-aw2607
 
 Files: [git submodules]
 License: External Code

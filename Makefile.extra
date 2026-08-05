@@ -2,7 +2,7 @@
 # DO NOT EDIT IT DIRECTLY!
 # Custom rules should be placed in .github/local/Makefile.local
 
-KERNEL_FORK ?= aw2511
+KERNEL_FORK ?= aw2607
 ARCH ?= arm64
 CROSS_COMPILE ?= aarch64-linux-gnu-
 DPKG_FLAGS ?= -d
