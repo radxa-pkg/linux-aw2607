@@ -1,8 +1,8 @@
 {
   "*": {
     "Releases": [
-      "a733-trixie",
-      "a733-trixie-test"
+      "a527-trixie",
+      "a527-trixie-test"
     ]
   }
 }

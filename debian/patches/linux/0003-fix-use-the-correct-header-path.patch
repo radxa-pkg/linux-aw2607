@@ -32,64 +32,6 @@ index 9c67027..fe3305c 100644
  #undef TRACE_INCLUDE_FILE
  #define TRACE_INCLUDE_FILE sunxi-gmac-trace
  #include <trace/define_trace.h>
-diff --git a/bsp/drivers/sound/adapter/snd_sunxi_adapter.c b/bsp/drivers/sound/adapter/snd_sunxi_adapter.c
-index 63057ea..5464739 100644
---- a/bsp/drivers/sound/adapter/snd_sunxi_adapter.c
-+++ b/bsp/drivers/sound/adapter/snd_sunxi_adapter.c
-@@ -12,7 +12,7 @@
-  */
- 
- #include "snd_sunxi_adapter.h"
--#include "snd_sunxi_log.h"
-+#include "../platform/snd_sunxi_log.h"
- 
- #if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 6, 0)
- void sunxi_adpt_set_dai_ops(struct snd_soc_dai_driver *dai_drv, struct snd_soc_dai_ops *ops,
-diff --git a/bsp/drivers/sound/adapter/snd_sunxi_pcm_adapter.c b/bsp/drivers/sound/adapter/snd_sunxi_pcm_adapter.c
-index db119af..3096122 100644
---- a/bsp/drivers/sound/adapter/snd_sunxi_pcm_adapter.c
-+++ b/bsp/drivers/sound/adapter/snd_sunxi_pcm_adapter.c
-@@ -16,8 +16,8 @@
- #include <sound/soc.h>
- #include <sound/dmaengine_pcm.h>
- 
--#include "snd_sunxi_log.h"
--#include "snd_sunxi_pcm.h"
-+#include "../platform/snd_sunxi_log.h"
-+#include "../platform/snd_sunxi_pcm.h"
- 
- #define SUNXI_DMAENGINE_PCM_DRV_NAME	"sunxi_dmaengine_pcm"
- 
-diff --git a/bsp/drivers/sound/platform/platforms/snd_sun55iw3_dmic.c b/bsp/drivers/sound/platform/platforms/snd_sun55iw3_dmic.c
-index d43f766..db8cf9b 100644
---- a/bsp/drivers/sound/platform/platforms/snd_sun55iw3_dmic.c
-+++ b/bsp/drivers/sound/platform/platforms/snd_sun55iw3_dmic.c
-@@ -19,8 +19,8 @@
- #include <linux/device.h>
- #include <linux/regmap.h>
- 
--#include "snd_sunxi_log.h"
--#include "snd_sunxi_dmic.h"
-+#include "../snd_sunxi_log.h"
-+#include "../snd_sunxi_dmic.h"
- 
- struct sunxi_dmic_clk {
- 	/* parent clk */
-diff --git a/bsp/drivers/sound/platform/platforms/snd_sun55iw3_i2s.c b/bsp/drivers/sound/platform/platforms/snd_sun55iw3_i2s.c
-index 2737d6d..f1cf03c 100644
---- a/bsp/drivers/sound/platform/platforms/snd_sun55iw3_i2s.c
-+++ b/bsp/drivers/sound/platform/platforms/snd_sun55iw3_i2s.c
-@@ -19,8 +19,8 @@
- #include <linux/device.h>
- #include <linux/regmap.h>
- 
--#include "snd_sunxi_log.h"
--#include "snd_sunxi_i2s.h"
-+#include "../snd_sunxi_log.h"
-+#include "../snd_sunxi_i2s.h"
- 
- struct sunxi_i2s_clk {
- 	/* parent clk */
 diff --git a/bsp/modules/nand/common1/nfd/nand_type.h b/bsp/modules/nand/common1/nfd/nand_type.h
 index ce49aeb..0703362 100644
 --- a/bsp/modules/nand/common1/nfd/nand_type.h
@@ -141,36 +83,6 @@ index 3453f9d1..a0c267b1 100644
  
  #define VE_REG_DEC_TOP_BASE	0X0000
  #define VE_REG_ENC_TOP_BASE	0X0800
-diff --git a/bsp/drivers/sound/platform/platforms/snd_sun60iw2_i2s.c b/bsp/drivers/sound/platform/platforms/snd_sun60iw2_i2s.c
-index 3453f9d2..a0c267b2 100644
---- a/bsp/drivers/sound/platform/platforms/snd_sun60iw2_i2s.c
-+++ b/bsp/drivers/sound/platform/platforms/snd_sun60iw2_i2s.c
-@@ -19,8 +19,8 @@
- #include <linux/device.h>
- #include <linux/regmap.h>
- 
--#include "snd_sunxi_log.h"
--#include "snd_sunxi_i2s.h"
-+#include "../snd_sunxi_log.h"
-+#include "../snd_sunxi_i2s.h"
- 
- struct sunxi_i2s_clk {
- 	/* parent clk */
-diff --git a/bsp/drivers/sound/platform/platforms/snd_sun60iw2_owa.c b/bsp/drivers/sound/platform/platforms/snd_sun60iw2_owa.c
-index 3453f9d4..a0c267b4 100644
---- a/bsp/drivers/sound/platform/platforms/snd_sun60iw2_owa.c
-+++ b/bsp/drivers/sound/platform/platforms/snd_sun60iw2_owa.c
-@@ -19,8 +19,8 @@
- #include <linux/device.h>
- #include <linux/regmap.h>
- 
--#include "snd_sunxi_log.h"
--#include "snd_sunxi_owa.h"
-+#include "../snd_sunxi_log.h"
-+#include "../snd_sunxi_owa.h"
- 
- struct sunxi_owa_clk {
- 	/* parent clk */
 -- 
 2.47.1
 
