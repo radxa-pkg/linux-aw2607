@@ -1,3 +1,13 @@
+linux-aw2607 (6.6.98-2) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Update devcontainer image from bookworm to trixie
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer (Shenzhen) Co., Ltd." <dev@radxa.com>  Thu, 19 Nov 2026 08:06:04 +0000
+
 linux-aw2607 (6.6.98-1) unstable; urgency=medium
 
   [ Feng Zhang ]
